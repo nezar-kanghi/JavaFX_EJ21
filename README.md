@@ -1,0 +1,1 @@
+Este ejercicio pide abrir un diálogo que permita al usuario escribir texto, para ello usamos TextInputDialog que tiene un campo de texto incorporado y con ifPresent() solo se procesa el resultado si el usuario pulsó Aceptar y no Cancelar.
