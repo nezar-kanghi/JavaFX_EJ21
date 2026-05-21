@@ -14,11 +14,14 @@ public class Ejercicio_21 extends Application {
         Button btn = new Button("Abrir diálogo");
 
         btn.setOnAction(event -> {
+            // TextInputDialog es un diálogo con un campo de texto incorporado
             TextInputDialog dialogo = new TextInputDialog();
             dialogo.setTitle("Entrada de texto");
             dialogo.setHeaderText("Escribe algo");
             dialogo.setContentText("Texto:");
 
+            // showAndWait() espera a que el usuario cierre el diálogo
+            // ifPresent() solo ejecuta el código si el usuario pulsó Aceptar, no Cancelar
             dialogo.showAndWait().ifPresent(texto -> {
                 System.out.println("Texto ingresado: " + texto);
             });
